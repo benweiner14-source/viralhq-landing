@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ViralHQ Terms and Conditions — Bazooka Entertainment LLC. Read our service terms, payment policy, cancellation terms, and limitation of liability.">
+<title>Terms & Conditions — ViralHQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --scarlet: #FF1744;
+    --scarlet-dark: #CC1236;
+    --black: #0D0D0F;
+    --surface: #1A1A1E;
+    --off-white: #F7F6F4;
+    --text: #1A1A1E;
+    --muted: #6B6B70;
+    --mono: 'JetBrains Mono', monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Barlow', sans-serif; background: var(--off-white); color: var(--text); line-height: 1.7; }
+
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--black); border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .nav-logo-icon {
+    width: 32px; height: 32px; background: var(--scarlet); border-radius: 7px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .nav-logo-icon svg { width: 18px; height: 18px; }
+  .nav-wordmark { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 20px; color: #fff; letter-spacing: -0.01em; }
+  .nav-wordmark span { color: var(--scarlet); }
+  .nav-links { display: flex; align-items: center; gap: 1.5rem; }
+  .nav-link { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.45); text-decoration: none; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.15s; }
+  .nav-link:hover, .nav-link.active { color: #fff; }
+  .nav-link.active { color: var(--scarlet); }
+
+  .hero {
+    background: var(--black); padding: 5rem 2rem 4rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .hero-inner { max-width: 760px; margin: 0 auto; }
+  .hero-tag { font-family: var(--mono); font-size: 11px; font-weight: 500; color: var(--scarlet); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem; }
+  .hero-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: clamp(36px, 5vw, 56px); color: #fff; text-transform: uppercase; line-height: 1.0; margin-bottom: 1rem; }
+  .hero-meta { display: flex; gap: 2rem; flex-wrap: wrap; }
+  .hero-meta span { font-size: 13px; color: rgba(255,255,255,0.35); font-family: var(--mono); }
+
+  .acceptance-bar {
+    background: #fff; border-left: 3px solid var(--scarlet);
+    padding: 1rem 1.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;
+    font-size: 14px; color: #444; line-height: 1.6;
+  }
+  .acceptance-bar strong { color: var(--text); }
+
+  .content { max-width: 760px; margin: 0 auto; padding: 3rem 2rem 6rem; }
+
+  .toc {
+    background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 10px;
+    padding: 1.5rem 2rem; margin-bottom: 2.5rem;
+  }
+  .toc-title { font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 1rem; }
+  .toc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 2rem; }
+  .toc a { display: block; font-size: 13px; color: var(--scarlet); text-decoration: none; padding: 3px 0; transition: opacity 0.15s; }
+  .toc a:hover { opacity: 0.7; }
+
+  .section { margin-bottom: 2.5rem; }
+  .section-num { font-family: var(--mono); font-size: 11px; color: var(--scarlet); letter-spacing: 0.1em; font-weight: 500; margin-bottom: 0.4rem; }
+  .section h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 26px; text-transform: uppercase; letter-spacing: -0.01em; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 2px solid rgba(0,0,0,0.07); }
+  .section h3 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin: 1.5rem 0 0.5rem; }
+  .section p { font-size: 15px; color: #333; margin-bottom: 0.9rem; line-height: 1.7; }
+  .section ul { margin: 0.5rem 0 0.9rem 1.5rem; }
+  .section ul li { font-size: 15px; color: #333; margin-bottom: 0.5rem; line-height: 1.6; }
+  .caps-box { background: #f0f0f0; border: 1px solid #ddd; border-radius: 6px; padding: 1rem 1.25rem; margin: 0.75rem 0 1rem; }
+  .caps-box p { font-size: 12px; line-height: 1.65; color: #444; font-weight: 600; letter-spacing: 0.01em; margin: 0; }
+  .divider { border: none; border-top: 1px solid rgba(0,0,0,0.07); margin: 2rem 0; }
+
+  .stripe-note {
+    background: #f9f5ff; border: 1px solid #d4b8ff; border-radius: 8px;
+    padding: 1rem 1.25rem; margin: 1rem 0; font-size: 14px; color: #4a2d8a;
+  }
+
+  .contact-box {
+    background: var(--black); color: #fff; border-radius: 12px;
+    padding: 2rem 2.5rem; margin-top: 3rem;
+  }
+  .contact-box h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 22px; text-transform: uppercase; margin-bottom: 0.5rem; }
+  .contact-box p { font-size: 14px; color: rgba(255,255,255,0.5); margin-bottom: 0.4rem; }
+  .contact-box a { color: var(--scarlet); text-decoration: none; font-weight: 600; }
+
+  footer {
+    background: var(--black); padding: 2rem 2rem;
+    display: flex; flex-direction: column; align-items: center; gap: 0.75rem;
+  }
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a { font-size: 12px; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.15s; }
+  .footer-links a:hover { color: rgba(255,255,255,0.7); }
+  footer p { font-size: 12px; color: rgba(255,255,255,0.2); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-icon">
+      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="1,15 6,9 10,11 14,4 18,1" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="18" cy="1" r="2" fill="#FF1744"/>
+      </svg>
+    </div>
+    <span class="nav-wordmark">Viral<span>HQ</span></span>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link active" href="viralhq-terms.html">Terms</a>
+    <a class="nav-link" href="viralhq-privacy.html">Privacy</a>
+    <a class="nav-link" href="index.html">&larr; Home</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Legal</div>
+    <h1 class="hero-title">Terms &amp; Conditions</h1>
+    <div class="hero-meta">
+      <span>Last updated: March 2026</span>
+      <span>Version 1.0</span>
+      <span>Bazooka Entertainment LLC (ViralHQ)</span>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="acceptance-bar">
+    <strong>By using the ViralHQ Service, submitting payment, or signing a Client Services Agreement, you agree to be bound by these Terms.</strong> If you are entering into these Terms on behalf of a company or other legal entity, you represent that you have the authority to bind that entity.
+  </div>
+
+  <div class="toc">
+    <div class="toc-title">Contents</div>
+    <div class="toc-grid">
+      <a href="#parties">1. Parties &amp; Acceptance</a>
+      <a href="#services">2. Services</a>
+      <a href="#payment">3. Payment Terms</a>
+      <a href="#termination">4. Term &amp; Termination</a>
+      <a href="#force-majeure">5. Force Majeure</a>
+      <a href="#liability">6. Limitation of Liability</a>
+      <a href="#ip">7. Intellectual Property</a>
+      <a href="#client">8. Client Responsibilities</a>
+      <a href="#marketing">9. Marketing Reference</a>
+      <a href="#governing">10. Governing Law</a>
+      <a href="#general">11. General Provisions</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  </div>
+
+  <div class="section" id="parties">
+    <div class="section-num">01</div>
+    <h2>Parties &amp; Acceptance</h2>
+    <p>These Terms and Conditions ("Terms") govern your use of the ViralHQ social media virality monitoring service ("Service") provided by Bazooka Entertainment LLC, a Delaware limited liability company operating under the trade name ViralHQ ("ViralHQ," "we," "us," or "our").</p>
+    <p>These Terms are binding upon the earliest of: (a) your e-signature on a Client Services Agreement; (b) your submission of payment for any ViralHQ tier; or (c) your first use of the Service. If any of these events occur, you ("Client," "you," or "your") are bound by these Terms in their entirety.</p>
+    <p>For purposes of these Terms, <strong>"written notice"</strong> means a written communication delivered via email to the receiving party's confirmed email address, effective upon transmission. Written notice to ViralHQ must be sent to <strong>bazooka.ent@gmail.com</strong>.</p>
+  </div>
+  <hr class="divider">
+
+  <div class="section" id="services">
+    <div class="section-num">02</div>
+    <h2>Services</h2>
+    <h3>What We Provide</h3>
+    <p>ViralHQ provides a managed social media virality monitoring service that tracks designated social media accounts, hashtags, and keywords across specified platforms and delivers real-time alerts when content surges in engagement or virality. Alerts are delivered via your chosen channel: Discord, Slack, email, or SMS.</p>
+
+    <h3>Service Tiers</h3>
+    <ul>
+      <li><strong>Solo ($99/mo):</strong> 1 platform, up to 10 accounts monitored, alerts approximately every 30 minutes. Subject to a 3-month minimum commitment.</li>
+      <li><strong>Base ($299/mo):</strong> 2 platforms, up to 30 accounts monitored, alerts approximately every 10 minutes. Month-to-month.</li>
+      <li><strong>Pro ($499/mo):</strong> All 5 platforms (Instagram, TikTok, Twitter/X, YouTube, Reddit), up to 90 accounts monitored, alerts approximately every 5 minutes, key voices monitoring, threshold tuning, priority support. Month-to-month.</li>
+    </ul>
+
+    <h3>Auto-Renewal</h3>
+    <p>Subscriptions automatically renew monthly on the anniversary of your start date. You authorize recurring charges until the subscription is cancelled per Section 4.</p>
+
+    <h3>No Guarantee of Coverage</h3>
+    <p>The Service relies on third-party data sources and automated infrastructure outside ViralHQ's control. We do not guarantee: (a) detection of every viral event; (b) delay-free alert delivery; or (c) continued support of any specific platform. Platform API changes, outages, rate limiting, or IP restrictions may affect or reduce Service performance without notice. ViralHQ is not liable for missed detections or delayed alerts resulting from such factors.</p>
+
+    <h3>Onboarding Timeline</h3>
+    <p>Service activation occurs within 3 business days of completed onboarding for Pro and Base clients, and within 5 business days for Solo clients.</p>
+  </div>
+  <hr class="divider">
+
+  <div class="section" id="payment">
+    <div class="section-num">03</div>
+    <h2>Payment Terms</h2>
+
+    <h3>Billing</h3>
+    <p>All fees are billed monthly in advance on your subscription start date. Payment is processed through Stripe, Inc. By subscribing, you authorize ViralHQ to charge your payment method on a recurring monthly basis.</p>
+
+    <div class="stripe-note">
+      💳 <strong>Payment processing:</strong> All payments are handled by Stripe, Inc., a PCI-DSS Level 1 compliant payment processor. ViralHQ does not store your credit card information. By completing checkout, you also agree to <a href="https://stripe.com/legal" target="_blank" rel="noopener" style="color:#6b2fa0;">Stripe's Terms of Service</a>.
+    </div>
+
+    <h3>Solo Plan Minimum Commitment</h3>
+    <p>The Solo Plan requires a minimum 3-month initial commitment. You may not cancel or request a refund during the initial 3-month period. After the minimum period, Solo converts to month-to-month.</p>
+
+    <h3>Non-Payment &amp; Suspension</h3>
+    <p>If payment fails, Stripe will retry automatically. If unresolved after 7 days from the original due date, ViralHQ reserves the right to suspend Service immediately. Service resumes upon receipt of all outstanding amounts. ViralHQ is not liable for missed alerts during suspension for non-payment.</p>
+
+    <h3>Price Changes</h3>
+    <p>ViralHQ may modify pricing for existing subscriptions with at least 30 days' written notice. Continued use after the effective date constitutes acceptance. If you do not accept the new pricing, you must cancel before it takes effect.</p>
+
+    <h3>No Refunds</h3>
+    <p>Except where ViralHQ permanently discontinues the Service (in which case a pro-rated refund for unused days is provided), all fees are non-refundable. No refunds are issued for partial billing periods, unused capacity, early cancellation, or service interruptions caused by third-party platform changes.</p>
+  </div>
+  <hr class="divider">
+
+  <div class="section" id="termination">
+    <div class="section-num">04</div>
+    <h2>Term &amp; Termination</h2>
+
+    <h3>Cancellation by You</h3>
+    <p>You may cancel by providing written notice to bazooka.ent@gmail.com at least <strong>14 days before your next billing date</strong>. Requests with less than 14 days' notice take effect at the end of the following billing period. Solo Plan clients may not cancel during the initial 3-month commitment. No refunds are issued for prepaid fees.</p>
+
+    <h3>Termination by ViralHQ</h3>
+    <p>We may terminate immediately if: (a) payment remains unresolved after 7 days; (b) you materially breach these Terms and fail to cure within 10 days of written notice; or (c) we permanently discontinue the Service. Termination for (a) or (b) does not entitle you to any refund. Termination under (c) entitles you to a pro-rated refund for unused days.</p>
+
+    <h3>Dispute Notice Requirement</h3>
+    <p>Before initiating arbitration, the aggrieved party must deliver written notice describing the dispute and relief sought. The parties will negotiate in good faith for 30 days. Arbitration may not begin until this period has lapsed without resolution.</p>
+
+    <h3>Effect of Termination</h3>
+    <p>Upon termination: all licenses terminate; monitoring workflows are deactivated; outstanding fees become immediately due; and your configuration data is deleted within 30 days. Sections 5, 6, 7, and 10 survive termination.</p>
+  </div>
+  <hr class="divider">
+
+  <div class="section" id="force-majeure">
+    <div class="section-num">05</div>
+    <h2>Force Majeure</h2>
+    <p>ViralHQ is not liable for any failure or delay in performance caused by circumstances beyond our reasonable control, including: platform API changes or shutdowns by Instagram, TikTok, Twitter/X, YouTube, or Reddit; third-party infrastructure failures (including Apify or n8n outages); internet disruptions; government actions; or cybersecurity incidents. We will notify you of any such event as soon as practicable and use commercially reasonable efforts to resume Service. Force majeure events do not entitle you to a refund.</p>
+  </div>
+  <hr class="divider">
+
+  <div class="section" id="liability">
+    <div class="section-num">06</div>
+    <h2>Limitation of Liability</h2>
+
+    <h3>Disclaimer of Warranties</h3>
+    <div class="caps-box">
+      <p>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND. VIRALHQ EXPRESSLY DISCLAIMS ALL WARRANTIES INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. VIRALHQ DOES NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED OR ERROR-FREE.</p>
+    </div>
+
+    <h3>Liability Cap</h3>
+    <div class="caps-box">
+      <p>IN NO EVENT SHALL VIRALHQ'S TOTAL LIABILITY TO YOU, REGARDLESS OF THE FORM OF ACTION, EXCEED THE TOTAL FEES ACTUALLY PAID BY YOU TO VIRALHQ IN THE THIRTY (30) DAY PERIOD IMMEDIATELY PRECEDING THE DATE ON WHICH THE CLAIM AROSE.</p>
+    </div>
+
+    <h3>No Consequential Damages</h3>
+    <div class="caps-box">
+      <p>VIRALHQ IS NOT LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS, LOST REVENUE, BRAND DAMAGE, MISSED BUSINESS OPPORTUNITIES, OR COST OF SUBSTITUTE SERVICES — EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+    </div>
+
+    <p>You acknowledge that these limitations are a fundamental element of the bargain between the parties and that ViralHQ would not provide the Service without these limitations.</p>
+  </div>
+  <hr class="divider">
+
+  <div class="section" id="ip">
+    <div class="section-num">07</div>
+    <h2>Intellectual Property</h2>
+    <p>All workflows, automation logic, monitoring infrastructure, systems, and technology underlying the Service are the sole and exclusive intellectual property of Bazooka Entertainment LLC. Your subscription grants you a limited, non-exclusive, non-transferable license to receive and use Service output (alerts and notifications) for your internal business purposes during your subscription term. You acquire no ownership rights in the Service or its underlying technology. You may not reverse engineer, copy, sublicense, resell, or attempt to replicate the Service or its methodology.</p>
+  </div>
+  <hr class="divider">
+
+  <div class="section" id="client">
+    <div class="section-num">08</div>
+    <h2>Client Responsibilities</h2>
+    <p>You represent, warrant, and agree that you will:</p>
+    <ul>
+      <li>Provide accurate, complete, and lawfully obtained account lists, hashtags, and keywords</li>
+      <li>Promptly notify ViralHQ of changes to your monitoring preferences</li>
+      <li>Maintain active and accessible delivery channels (Discord, Slack, email, or phone)</li>
+      <li>Use Service output only for lawful purposes and in compliance with all applicable laws and platform terms of service</li>
+      <li>Not use the Service for any purpose that is unlawful, harmful, or fraudulent</li>
+      <li>Take sole responsibility for any decisions made based on Service alerts</li>
+    </ul>
+  </div>
+  <hr class="divider">
+
+  <div class="section" id="marketing">
+    <div class="section-num">09</div>
+    <h2>Marketing Reference</h2>
+    <p>ViralHQ will only reference your name or logo in marketing materials, case studies, or testimonials with your prior written permission. You may revoke permission at any time with 14 days' written notice to bazooka.ent@gmail.com.</p>
+  </div>
+  <hr class="divider">
+
+  <div class="section" id="governing">
+    <div class="section-num">10</div>
+    <h2>Governing Law &amp; Dispute Resolution</h2>
+    <p>These Terms are governed by the laws of the State of Delaware, without regard to conflict of law provisions. Before initiating arbitration, the parties must follow the dispute notice procedure in Section 4. Unresolved disputes will be submitted to binding arbitration under American Arbitration Association Commercial Rules, conducted in Delaware. The arbitrator's award is final and may be entered as a court judgment. Either party may seek equitable relief from a court to prevent irreparable harm pending arbitration. The prevailing party in arbitration is entitled to recover reasonable attorneys' fees and costs.</p>
+  </div>
+  <hr class="divider">
+
+  <div class="section" id="general">
+    <div class="section-num">11</div>
+    <h2>General Provisions</h2>
+    <ul>
+      <li><strong>Entire Agreement:</strong> These Terms, together with any signed Client Services Agreement and Stripe subscription confirmation, constitute the complete agreement between the parties.</li>
+      <li><strong>Amendments:</strong> ViralHQ may update these Terms with 30 days' written notice. Continued use after the effective date constitutes acceptance.</li>
+      <li><strong>Severability:</strong> If any provision is held invalid or unenforceable, remaining provisions continue in full force.</li>
+      <li><strong>Waiver:</strong> Failure to enforce any right is not a continuing waiver of that right.</li>
+      <li><strong>Assignment:</strong> You may not assign these Terms without ViralHQ's written consent. ViralHQ may assign without restriction.</li>
+      <li><strong>Independent Contractors:</strong> The parties are independent contractors. Nothing in these Terms creates a partnership, agency, or employment relationship.</li>
+    </ul>
+  </div>
+
+  <div class="contact-box" id="contact">
+    <h3>Questions About These Terms?</h3>
+    <p>Contact us before subscribing if you have any questions. For legal matters:</p>
+    <p><a href="mailto:bazooka.ent@gmail.com">bazooka.ent@gmail.com</a></p>
+    <p style="margin-top:1.25rem; font-size:13px;">Also see our <a href="viralhq-privacy.html">Privacy Policy</a> for details on how we handle your data.</p>
+    <p style="margin-top:1rem;">Bazooka Entertainment LLC &nbsp;&middot;&nbsp; ViralHQ &nbsp;&middot;&nbsp; Delaware, USA</p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="viralhq-terms.html">Terms</a>
+    <a href="viralhq-privacy.html">Privacy Policy</a>
+    <a href="mailto:bazooka.ent@gmail.com">Contact</a>
+  </div>
+  <p>&copy; 2026 Bazooka Entertainment LLC. All rights reserved. ViralHQ is a trade name of Bazooka Entertainment LLC, a Delaware LLC.</p>
+</footer>
+
+</body>
+</html>
